@@ -1,0 +1,55 @@
+*, *::before, *::after{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.grid-container{
+    
+    display: grid;
+    grid-auto-columns: 1fr;
+    gap: 10px;
+    grid-template-areas: 
+    'one one two five'
+    'three four four five'
+    'six six six six';
+    
+}
+
+.grid-container > * {
+    padding: 40px;
+}
+
+.blue-container{
+    background-color: blue;
+    grid-area: one;
+}
+.orange-container{
+    background-color: orange;
+    grid-area: two;
+}
+.purple-container{
+    background-color: purple;
+    grid-area: three;
+}
+.red-container{
+    background-color: red;
+    grid-area: four;
+}
+.grey-container{
+    background-color: grey;
+    grid-area: five;
+}
+
+.green-container {
+    background-color: green;
+    grid-area: six;
+}
+
